@@ -1,6 +1,6 @@
 <template>
     <div
-        class="flex flex-col space-y-4 text-blue-400 bg-gradient-to-b from-white to-blue-400 h-screen"
+        class="flex flex-col text-blue-400 bg-gradient-to-b from-white to-blue-400 h-screen"
     >
         <div class="mt-20 logo mx-auto">
             <svg width="96" height="96" viewBox="0 0 24 24">
@@ -10,7 +10,9 @@
             </svg>
         </div>
 
-        <h1 class="mt-4 mx-auto font-sans font-bold text-4xl">{{ title }}</h1>
+        <h1 class="mt-4 mx-auto font-sans font-bold text-4xl">
+            {{ title }}
+        </h1>
 
         <router-link
             to="/login"
@@ -37,10 +39,10 @@ export default {
     data() {
         return {
             title: 'MealTracker'
-        };
+        }
     },
     methods: {}
-};
+}
 </script>
 
 <style lang="scss" scoped>
