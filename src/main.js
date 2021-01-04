@@ -1,9 +1,16 @@
-import { createApp } from "vue";
-import App from "./App.vue";
-import router from "./router";
-import store from "./store";
+import { createApp } from 'vue'
+import App from './App.vue'
+import router from './router'
+import store from './store'
+import mdiVue from 'mdi-vue'
+import * as mdijs from '@mdi/js'
+import '@/assets/scss/index.scss'
 
-createApp(App)
-  .use(store)
-  .use(router)
-  .mount("#app");
+const app = createApp(App)
+
+app.use(mdiVue, {
+    icons: mdijs
+})
+    .use(store)
+    .use(router)
+    .mount('#app')
