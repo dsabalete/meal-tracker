@@ -1,18 +1,13 @@
 <template>
-    <component :is="layout">
-        <router-view v-model:layout="layout" />
+    <component :is="this.$route.meta.layout || 'div'">
+        <router-view />
     </component>
 </template>
 
 <script>
 export default {
     name: 'App',
-    data() {
-        return {
-            layout: 'div'
-        };
-    }
-};
+}
 </script>
 
 <style lang="scss" scoped></style>

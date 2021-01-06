@@ -38,10 +38,10 @@ export default {
     components: {},
     data() {
         return {
-            title: 'MealTracker'
+            title: 'MealTracker',
         }
     },
-    methods: {}
+    methods: {},
 }
 </script>
 
