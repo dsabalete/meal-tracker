@@ -11,17 +11,17 @@
             type="text"
             placeholder="email"
             class="form-input block w-2/3 rounded-lg border-4 border-blue-400 mt-32 p-4 
-                self-center text-center font-bold"
+                self-center text-center focus:outline-none focus:border-blue-500"
         />
         <input
             type="password"
             placeholder="password"
             class="form-input block w-2/3 rounded-lg border-4 border-blue-400 mt-7 p-4 
-                self-center text-center"
+                self-center text-center focus:outline-none focus:border-blue-500"
         />
         <button
             class="form-input block w-2/3 rounded-lg mt-7 p-4 self-center bg-white 
-                text-blue-400 shadow-md font-bold text-xl"
+                text-blue-400 shadow-md font-bold text-xl focus:outline-none"
         >
             Login
         </button>
