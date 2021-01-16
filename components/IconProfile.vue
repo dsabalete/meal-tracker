@@ -1,5 +1,5 @@
 <template>
-  <div v-if="!loggedIn" class="text-gray-400 mt-3">
+  <div v-if="!loggedIn" class="text-gray-400 mt-1 md:mt-3 lg:mt-6">
     <svg width="50" height="50" viewBox="0 0 24 24">
       <path
         fill="currentColor"

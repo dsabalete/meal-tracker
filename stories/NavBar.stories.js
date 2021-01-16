@@ -5,7 +5,4 @@ export default {
   component: NavBar,
 }
 
-export const SimpleNavBar = () => ({
-  components: { NavBar },
-  template: '<NavBar />',
-})
+export const simpleNavBar = () => '<NavBar />'

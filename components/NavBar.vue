@@ -2,7 +2,7 @@
   <div class="h-20 bg-white text-blue-400 flex justify-between">
     <div class="flex">
       <nuxt-link to="/">
-        <div class="p-4">
+        <div class="p-2 md:p-4 lg:p-8">
           <svg width="42" height="42" viewBox="0 0 24 24">
             <path
               fill="currentColor"
@@ -12,14 +12,16 @@
         </div>
       </nuxt-link>
       <nuxt-link to="/">
-        <div class="font-semibold text-xl pt-8">Meal Tracker</div>
+        <div class="font-semibold text-xl pt-6 md:pt-8 lg:text-4xl">
+          Meal Tracker
+        </div>
       </nuxt-link>
     </div>
     <div class="flex justify-end">
       <div class="icon-profile">
         <IconProfile />
       </div>
-      <div class="p-4">
+      <div class="p-2 md:p-4 lg:p-6">
         <svg width="42" height="42" viewBox="0 0 24 24">
           <path
             fill="currentColor"
