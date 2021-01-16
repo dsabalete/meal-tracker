@@ -6,7 +6,7 @@
         <div>OR</div>
         -->
 
-  <div class="flex flex-col justify-start bg-gray-100 h-screen w-full pt-32">
+  <div class="flex flex-col justify-start bg-gray-100 h-full w-full pt-32">
     <div
       v-if="error"
       class="font-bold block w-2/3 mx-auto text-red-600 text-center"
@@ -14,23 +14,23 @@
       {{ error }}
     </div>
     <input
-      v-model="user.email"
+      v-model="form.email"
       type="text"
-      placeholder="email"
-      class="form-input block w-2/3 rounded-lg border-4 mt-7 p-4 self-center text-center focus:outline-none focus:border-blue-500"
+      placeholder="Enter email"
+      class="form-input block w-2/3 rounded-lg border-4 mt-8 p-4 self-center text-center focus:outline-none focus:border-blue-500"
       :class="error ? 'border-red-600' : 'border-blue-400'"
       @change="error = null"
     />
     <input
-      v-model="user.password"
+      v-model="form.password"
       type="password"
-      placeholder="password"
-      class="form-input block w-2/3 rounded-lg border-4 sd mt-7 p-4 self-center text-center focus:outline-none focus:border-blue-500"
+      placeholder="Enter password"
+      class="form-input block w-2/3 rounded-lg border-4 sd mt-8 p-4 self-center text-center focus:outline-none focus:border-blue-500"
       :class="error ? 'border-red-600' : 'border-blue-400'"
       @change="error = null"
     />
     <button
-      class="form-input block w-2/3 rounded-lg mt-7 p-4 self-center bg-white shadow-md font-bold text-xl focus:outline-none"
+      class="form-input block w-2/3 rounded-lg mt-8 p-4 self-center bg-white shadow-md font-bold text-xl focus:outline-none"
       :class="error ? 'bg-red-600 text-white' : 'text-blue-400'"
       @click="login"
     >
@@ -40,26 +40,36 @@
 </template>
 
 <script>
+import { mapActions, mapGetters } from 'vuex'
+
 export default {
   name: 'Login',
   layout: 'login',
   data() {
     return {
       error: null,
-      user: {
+      form: {
         email: '',
         password: '',
       },
     }
   },
+  computed: {
+    ...mapGetters('Login', ['user', 'imgProfile', 'initials']),
+  },
   methods: {
-    login() {
-      if (this.user.email === 'test' && this.user.password === 'test') {
-        this.$router.push('main')
-      } else {
-        this.error = 'User or password not valid'
-      }
-    },
+    ...mapActions('Login', ['logout', 'login']),
+    // async login() {
+    //   try {
+    //     await this.$fire.auth.createUserWithEmailAndPassword(
+    //       this.user.email,
+    //       this.user.password
+    //     )
+    //     await this.$router.push('main')
+    //   } catch (e) {
+    //     this.error = 'Email or password not valid'
+    //   }
+    // },
   },
 }
 </script>
