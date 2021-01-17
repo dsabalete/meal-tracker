@@ -5,4 +5,4 @@ export default {
   component: NavBar,
 }
 
-export const simpleNavBar = () => '<NavBar />'
+export const MyNavBar = () => '<NavBar />'
