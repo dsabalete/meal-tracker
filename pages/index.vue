@@ -2,6 +2,8 @@
   <div
     class="flex flex-col text-blue-400 bg-gradient-to-b from-white to-blue-400 h-screen"
   >
+    <ColorSwitch />
+
     <div class="mt-20 logo mx-auto">
       <svg width="96" height="96" viewBox="0 0 24 24">
         <path
@@ -31,7 +33,12 @@
 </template>
 
 <script>
+import ColorSwitch from '@/components/ColorSwitch'
+
 export default {
+  components: {
+    ColorSwitch,
+  },
   data() {
     return {
       title: 'MealTracker',
