@@ -1,6 +1,6 @@
 <template>
-  <div v-if="!loggedIn" class="text-gray-400 mt-1 md:mt-3 lg:mt-6">
-    <MealTrackerIcon />
+  <div v-if="!loggedIn" class="text-gray-400 mt-2 lg:mt-4">
+    <UserProfileIcon />
   </div>
   <div v-else>
     <img :src="imgSrc" class="mt-4 rounded-full" />
@@ -8,9 +8,11 @@
 </template>
 
 <script>
+import UserProfileIcon from '@/assets/icons/profile-user.svg?inline'
+
 export default {
   components: {
-    MealTrackerIcon: () => import('~/assets/icons/restaurant.svg?inline'),
+    UserProfileIcon,
   },
   data() {
     return {
