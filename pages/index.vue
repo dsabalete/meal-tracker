@@ -1,6 +1,6 @@
 <template>
   <!--  -->
-  <div class="flex flex-col space-y-12 text-blue-400 dark:bg-black h-screen">
+  <div class="flex flex-col flex-grow space-y-12 text-blue-400 dark:bg-black">
     <ColorSwitch />
 
     <div class="logo mx-auto">

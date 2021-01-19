@@ -1,8 +1,18 @@
 <template>
-  <div class="bg-gradient-to-b from-white to-blue-400">
+  <div
+    class="h-screen flex flex-col bg-gradient-to-b from-white to-blue-400 dark:bg-black"
+  >
+    <Header class="flex-none h-20" />
+
     <Nuxt />
+
+    <Footer class="flex-none h-10" />
   </div>
 </template>
+
+<script>
+export default {}
+</script>
 
 <style>
 html {

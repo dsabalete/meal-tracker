@@ -1,11 +1,9 @@
 <template>
-  <div class="main h-screen"></div>
+  <div class="flex-grow">Main page</div>
 </template>
 
 <script>
-export default {
-  layout: 'login',
-}
+export default {}
 </script>
 
 <style lang="scss" scoped>
