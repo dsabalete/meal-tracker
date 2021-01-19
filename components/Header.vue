@@ -1,7 +1,7 @@
 <template>
-  <header class="bg-gray-200 text-blue-400 dark:bg-gray-900 p-2">
-    <MealTrackerIcon />
-    <h1>Meal Tracker</h1>
+  <header class="flex flex-row bg-gray-200 text-blue-400 dark:bg-gray-900">
+    <MealTrackerIcon class="w-10 h-10 m-2" />
+    <h1 class="pt-4 text-2xl font-bold">Meal Tracker</h1>
   </header>
 </template>
 

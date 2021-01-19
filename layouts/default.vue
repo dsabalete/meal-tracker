@@ -2,7 +2,7 @@
   <div
     class="h-screen flex flex-col bg-gradient-to-b from-white to-blue-400 dark:bg-black"
   >
-    <Header class="flex-none h-20" />
+    <Header class="flex-none h-18" />
 
     <Nuxt />
 
