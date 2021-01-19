@@ -19,7 +19,6 @@ export default {
   },
   methods: {
     changeTheme(theme) {
-      console.log(theme)
       this.$colorMode.preference = theme
     },
   },

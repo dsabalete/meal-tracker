@@ -36,6 +36,11 @@ export default {
     '@nuxtjs/color-mode',
   ],
 
+  colorMode: {
+    preference: 'dark',
+    fallback: 'light',
+  },
+
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [['@nuxtjs/firebase', firebaseConfig], '@nuxtjs/svg'],
 
