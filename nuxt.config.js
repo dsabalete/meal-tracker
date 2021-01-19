@@ -39,6 +39,7 @@ export default {
   colorMode: {
     preference: 'dark',
     fallback: 'light',
+    classSuffix: '',
   },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
