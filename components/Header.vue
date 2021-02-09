@@ -1,7 +1,15 @@
 <template>
-  <header class="flex flex-row bg-gray-200 text-blue-400 dark:bg-gray-900">
-    <MealTrackerIcon class="w-10 h-10 m-2" />
-    <h1 class="pt-4 text-2xl font-bold">Meal Tracker</h1>
+  <header
+    class="flex items-center justify-between p-1 text-blue-400 dark:bg-gray-900"
+  >
+    <nuxt-link class="flex items-center" to="/">
+      <MealTrackerIcon class="w-10 h-10" />
+      <h1 class="pt-4 text-2xl font-bold">Meal Tracker</h1>
+    </nuxt-link>
+
+    <nuxt-link class="md:hidden" to="/profile">
+      <ProfileIcon />
+    </nuxt-link>
   </header>
 </template>
 

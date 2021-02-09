@@ -1,9 +1,10 @@
 <template>
-  <div v-if="!loggedIn" class="text-gray-400 mt-2 lg:mt-4">
+  <div v-if="!loggedIn" class="text-gray-400">
     <UserProfileIcon />
   </div>
   <div v-else>
-    <img :src="imgSrc" class="mt-4 rounded-full" />
+    <!-- TODO: Translate alt text -->
+    <img :src="imgSrc" class="rounded-full" alt="User image" />
   </div>
 </template>
 

@@ -1,12 +1,12 @@
 <template>
-  <div
-    class="h-screen flex flex-col bg-gradient-to-b from-white to-blue-400 dark:bg-black"
-  >
-    <Header class="flex-none h-18" />
+  <div class="h-screen">
+    <Header />
 
-    <Nuxt />
+    <main class="light:bg-light dark:bg-dark">
+      <Nuxt />
+    </main>
 
-    <Footer class="flex-none h-10" />
+    <Footer />
   </div>
 </template>
 
@@ -25,6 +25,10 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+
+main {
+  height: calc(100% - 100px);
 }
 
 *,
