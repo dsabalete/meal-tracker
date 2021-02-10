@@ -6,7 +6,7 @@
       <Nuxt />
     </main>
 
-    <Footer />
+    <Footer class="md:hidden" />
   </div>
 </template>
 
@@ -17,6 +17,12 @@ export default {}
 <style>
 .main {
   height: calc(100% - var(--header) - var(--footer));
+}
+
+@media (min-width: 768px) {
+  .main {
+    height: calc(100% - var(--header));
+  }
 }
 
 html {
