@@ -1,13 +1,42 @@
 <template>
   <footer
-    class="p-2 text-blue-700 dark:text-blue-400 dark:bg-gray-900 text-center"
+    class="footer flex justify-around px-5 pt-2 dark:text-white dark:bg-blue-main-800"
   >
-    David Sabalete &copy; 2021
+    <nuxt-link
+      v-for="(link, index) in links"
+      :key="index"
+      :to="link.url"
+      class="flex flex-col items-center"
+    >
+      <component :is="link.component" class="w-8 h-8 fill-white" />
+      <span>{{ link.name }}</span>
+    </nuxt-link>
   </footer>
 </template>
 
 <script>
 export default {
   name: 'Footer',
+  components: {
+    HomeIcon: () => import('@/assets/icons/home.svg?inline'),
+    AddIcon: () => import('@/assets/icons/add.svg?inline'),
+    ProfileIcon: () => import('@/assets/icons/profile.svg?inline'),
+  },
+  data: () => ({
+    links: [
+      { name: 'Inicio', url: '/', component: 'HomeIcon' },
+      { name: 'Nuevo', url: '/add', component: 'AddIcon' },
+      { name: 'Perfil', url: '/profile', component: 'ProfileIcon' },
+    ],
+  }),
+  methods: {},
 }
 </script>
+
+<style scoped>
+.header {
+  @apply flex items-center justify-between p-4;
+
+  height: var(--header);
+}
+</style>

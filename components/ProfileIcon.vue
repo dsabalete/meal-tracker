@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import UserProfileIcon from '@/assets/icons/profile-user.svg?inline'
+import UserProfileIcon from '@/assets/icons/profile.svg?inline'
 
 export default {
   components: {

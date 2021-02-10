@@ -1,6 +1,6 @@
 <template>
   <header
-    class="flex items-center justify-between p-1 text-blue-400 dark:bg-gray-900"
+    class="flex items-center justify-between p-1 text-blue-400 dark:bg-blue-main-800"
   >
     <nuxt-link class="flex items-center" to="/">
       <MealTrackerIcon class="w-10 h-10" />

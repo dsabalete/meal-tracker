@@ -2,7 +2,7 @@
   <div class="h-screen">
     <Header />
 
-    <main class="light:bg-light dark:bg-dark">
+    <main class="main light:bg-light dark:bg-dark">
       <Nuxt />
     </main>
 
@@ -15,6 +15,10 @@ export default {}
 </script>
 
 <style>
+.main {
+  height: calc(100% - var(--header) - var(--footer));
+}
+
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -25,10 +29,6 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-}
-
-main {
-  height: calc(100% - 100px);
 }
 
 *,
