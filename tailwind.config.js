@@ -2,21 +2,21 @@ module.exports = {
   theme: {
     extend: {
       fill: (theme) => ({
-        white: theme('colors.white'),
-        blue: theme('colors.blue'),
+        white: theme('colors.blue-main.300'),
       }),
       backgroundColor: (theme) => ({
-        light: theme('colors.gray-main.300'),
+        light: theme('colors.gray-main.100'),
         dark: theme('colors.blue-main.900'),
       }),
       colors: {
         'gray-main': {
-          300: '#EAEDF2',
+          100: '#EAEDF2',
         },
-        // TODO: review this colors, maybe are gray
         'blue-main': {
-          800: '#1C1C24',
-          900: '#131419',
+          200: '#BFDBFE',
+          300: '#93C5FD',
+          800: '#0d1131',
+          900: '#070919',
         },
       },
     },
