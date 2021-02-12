@@ -8,7 +8,7 @@
     />
     <IconLight
       v-else
-      class="cursor-pointer text-blue-400"
+      class="cursor-pointer text-blue-100"
       @click="changeTheme('light')"
     />
   </div>
