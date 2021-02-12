@@ -2,12 +2,6 @@
   <div
     class="flex flex-col space-y-12 text-blue-400 dark:bg-black dark:text-blue-600 h-screen"
   >
-    <!-- <button>
-            Login with Google
-        </button>
-
-        <div>OR</div>
-        -->
     <ColorSwitch />
 
     <div
