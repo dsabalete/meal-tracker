@@ -6,8 +6,9 @@
     <h1 class="text-center text-3xl font-bold">Meal Tracker</h1>
 
     <div
-      class="login-body mt-12 h-full flex justify-center items-center bg-light dark:bg-blue-main-800"
+      class="login-body mt-12 h-full flex flex-col justify-center items-center bg-light dark:bg-blue-main-800"
     >
+      <SocialLoginButton text="Iniciar sesión con google" />
       <p>iniciar sesion con google</p>
     </div>
   </div>
