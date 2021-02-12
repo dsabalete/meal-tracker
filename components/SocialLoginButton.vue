@@ -11,11 +11,6 @@ export default {
   components: {
     GoogleIcon: () => import('~/assets/icons/google.svg?inline'),
   },
-  data: () => ({
-    socialOptions: {
-      google: 'GoogleIcon',
-    },
-  }),
   props: {
     type: {
       type: String,
@@ -27,6 +22,11 @@ export default {
       required: true,
     },
   },
+  data: () => ({
+    socialOptions: {
+      google: 'GoogleIcon',
+    },
+  }),
   computed: {
     socialComponent() {
       return this.socialOptions[this.type]
