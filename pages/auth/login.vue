@@ -8,7 +8,10 @@
     <div
       class="login-body mt-12 h-full flex flex-col justify-center items-center bg-light dark:bg-blue-main-800"
     >
-      <SocialLoginButton text="Iniciar sesión con google" />
+      <SocialLoginButton
+        text="Iniciar sesión con google"
+        @click="loginWithGoogle"
+      />
       <p>iniciar sesion con google</p>
     </div>
   </div>
@@ -18,6 +21,19 @@
 export default {
   name: 'Login',
   layout: 'auth',
+  methods: {
+    async loginWithGoogle() {
+      try {
+        const provider = new this.$fireModule.auth.GoogleAuthProvider()
+        const result = await this.$fire.auth.signInWithPopup(provider)
+        console.log(result)
+      } catch (err) {
+        // TODO: show toast
+        // eslint-disable-next-lin
+        console.error(err)
+      }
+    },
+  },
 }
 </script>
 
