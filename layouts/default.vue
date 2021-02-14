@@ -1,8 +1,8 @@
 <template>
-  <div class="h-screen">
+  <div class="h-screen main-container">
     <Header />
 
-    <main class="main light:bg-light dark:bg-dark">
+    <main class="light:bg-light dark:bg-dark">
       <Nuxt />
     </main>
 
@@ -15,9 +15,14 @@ export default {}
 </script>
 
 <style>
-.main {
-  height: calc(100% - var(--header) - var(--footer));
+.main-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
+
+/* .main {
+  height: calc(100% - var(--header) - var(--footer));
+} */
 
 @media (min-width: 768px) {
   .main {
