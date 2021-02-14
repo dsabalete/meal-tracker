@@ -26,10 +26,11 @@ export default {
       try {
         const provider = new this.$fireModule.auth.GoogleAuthProvider()
         const result = await this.$fire.auth.signInWithPopup(provider)
+        // eslint-disable-next-line
         console.log(result)
       } catch (err) {
         // TODO: show toast
-        // eslint-disable-next-lin
+        // eslint-disable-next-line
         console.error(err)
       }
     },

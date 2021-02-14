@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login View should match snapshot 1`] = `
+<div
+  class="h-full overflow-hidden"
+>
+  <div
+    class="flex justify-end p-4"
+  >
+    <colorswitch-stub />
+  </div>
+   
+  <h1
+    class="text-center text-3xl font-bold"
+  >
+    Meal Tracker
+  </h1>
+   
+  <div
+    class="login-body mt-12 h-full flex flex-col justify-center items-center bg-light dark:bg-blue-main-800"
+  >
+    <socialloginbutton-stub
+      text="Iniciar sesión con google"
+      type="google"
+    />
+     
+    <p>
+      iniciar sesion con google
+    </p>
+  </div>
+</div>
+`;

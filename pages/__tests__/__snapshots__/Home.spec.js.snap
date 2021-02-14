@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home View should match snapshot 1`] = `
+<div
+  class="flex flex-col flex-grow space-y-12 text-blue-400 max-h-full"
+>
+  <colorswitch-stub />
+   
+  <div
+    class="logo mx-auto"
+  >
+    <mealtrackericon-stub
+      class="w-96 h-96"
+    />
+  </div>
+   
+  <div
+    class="mx-auto"
+  >
+    <h1
+      class="font-sans font-bold text-4xl"
+    >
+      MealTracker
+    </h1>
+  </div>
+   
+  <div
+    class="p-4 w-2/3 mx-auto shadow-lg rounded-lg bg-white dark:bg-gray-700 text-center"
+  >
+    <a
+      class="text-blue-400 dark:text-blue-100 font-bold text-2xl"
+    >
+      
+      Login
+    
+    </a>
+  </div>
+   
+  <div
+    class="p-4 w-2/3 mx-auto shadow-lg rounded-lg bg-blue-400 dark:bg-blue-700 text-center"
+  >
+    <a
+      class="text-white dark:text-blue-100 font-bold text-2xl"
+    >
+      
+      Create account
+    
+    </a>
+  </div>
+</div>
+`;

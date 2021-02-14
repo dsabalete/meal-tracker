@@ -7,9 +7,7 @@
     </div>
 
     <div class="mx-auto">
-      <h1 class="font-sans font-bold text-4xl">
-        {{ title }}
-      </h1>
+      <h1 class="font-sans font-bold text-4xl">MealTracker</h1>
     </div>
 
     <div
@@ -41,16 +39,11 @@ import ColorSwitch from '@/components/ColorSwitch'
 import MealTrackerIcon from '@/assets/icons/restaurant.svg?inline'
 
 export default {
+  name: 'HomeView',
   components: {
     ColorSwitch,
     MealTrackerIcon,
   },
-  data() {
-    return {
-      title: 'MealTracker',
-    }
-  },
-  methods: {},
 }
 </script>
 
