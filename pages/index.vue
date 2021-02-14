@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import ColorSwitch from '@/components/ColorSwitch'
+import ColorSwitch from '@/components/ui/ColorSwitch'
 import MealTrackerIcon from '@/assets/icons/restaurant.svg?inline'
 
 export default {

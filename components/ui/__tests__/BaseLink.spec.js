@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import BaseLink from '@/components/BaseLink.vue'
+import BaseLink from '@/components/ui/BaseLink.vue'
 
 const build = (props) => {
   const wrapper = mount(BaseLink, {

@@ -1,8 +1,8 @@
 import Vue from 'vue'
 
 const components = [
-  './components/ColorSwitch.vue',
-  './components/SocialLoginButton.vue',
+  './components/ui/ColorSwitch.vue',
+  './components/auth/SocialLoginButton.vue',
 ]
 
 components.forEach((path) => {

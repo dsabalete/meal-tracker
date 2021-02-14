@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import SocialLoginButton from '@/components/SocialLoginButton.vue'
+import SocialLoginButton from '@/components/auth/SocialLoginButton.vue'
 
 const build = (props) =>
   mount(SocialLoginButton, {
