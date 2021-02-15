@@ -1,5 +1,5 @@
 export default {
-  title: 'BaseLink',
+  title: 'UI/BaseLink',
 }
 
 export const MyPersonalWebsite = () => '<BaseLink />'

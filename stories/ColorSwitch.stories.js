@@ -1,8 +1,5 @@
-import ColorSwitch from '~/components/ColorSwitch.vue'
-
 export default {
-  title: 'ColorSwitch',
-  component: ColorSwitch,
+  title: 'UI/ColorSwitch',
 }
 
 export const AppColorSwitch = () => '<ColorSwitch />'

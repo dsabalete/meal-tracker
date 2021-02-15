@@ -1,5 +1,5 @@
 export default {
-  title: 'Footer',
+  title: 'UI/Footer',
 }
 
 export const DefaultFooter = () => '<Footer />'

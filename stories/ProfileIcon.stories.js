@@ -1,8 +1,5 @@
-import ProfileIcon from '~/components/ProfileIcon.vue'
-
 export default {
-  title: 'ProfileIcon',
-  component: ProfileIcon,
+  title: 'UI/ProfileIcon',
 }
 
 export const defaultProfileIcon = () => '<ProfileIcon />'

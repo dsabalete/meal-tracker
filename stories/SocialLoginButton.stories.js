@@ -1,5 +1,5 @@
 export default {
-  title: 'SocialLoginButton',
+  title: 'Auth/SocialLoginButton',
 }
 
 export const GoogleLoginButton = () =>

@@ -1,8 +1,5 @@
-import NavBar from '~/components/NavBar.vue'
-
 export default {
-  title: 'NavBar',
-  component: NavBar,
+  title: 'UI/NavBar',
 }
 
 export const MyNavBar = () => '<NavBar />'
