@@ -1,6 +1,6 @@
 <template>
   <div v-if="!loggedIn" class="text-gray-400">
-    <UserProfileIcon />
+    <IconProfile />
   </div>
   <div v-else>
     <!-- TODO: Translate alt text -->
@@ -9,12 +9,8 @@
 </template>
 
 <script>
-import UserProfileIcon from '@/assets/icons/profile.svg?inline'
-
 export default {
-  components: {
-    UserProfileIcon,
-  },
+  name: 'ProfileIcon',
   data() {
     return {
       loggedIn: false,

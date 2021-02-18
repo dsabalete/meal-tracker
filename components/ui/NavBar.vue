@@ -5,7 +5,7 @@
     <div class="flex">
       <nuxt-link to="/">
         <div class="p-2 md:p-4 lg:p-6">
-          <MealTrackerIcon />
+          <IconLogo />
         </div>
       </nuxt-link>
       <nuxt-link to="/">
@@ -15,21 +15,14 @@
     <div class="flex justify-end">
       <ProfileIcon />
       <div class="p-2 lg:p-4">
-        <BugerIcon />
+        <IconMenu />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import MealTrackerIcon from '@/assets/icons/restaurant.svg?inline'
-import BugerIcon from '@/assets/icons/burger-menu.svg?inline'
-
 export default {
   name: 'NavBar',
-  components: {
-    MealTrackerIcon,
-    BugerIcon,
-  },
 }
 </script>

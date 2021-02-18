@@ -1,32 +1,37 @@
 <template>
   <footer
-    class="footer flex justify-around px-5 pt-2 dark:text-white dark:bg-blue-main-800"
+    class="footer flex justify-around px-5 pt-2 text-gray-main-700 dark:text-gray-main-800 dark:bg-gray-main-1000"
   >
     <nuxt-link
       v-for="(link, index) in links"
       :key="index"
       :to="link.url"
       class="flex flex-col items-center"
+      :class="`link-${$colorMode.preference}`"
     >
-      <component :is="link.component" class="w-8 h-8 fill-white" />
+      <component :is="link.component" class="w-8 h-8" />
       <span>{{ link.name }}</span>
     </nuxt-link>
   </footer>
 </template>
 
 <script>
+import IconHome from '@/components/icons/IconHome.vue'
+import IconAdd from '@/components/icons/IconAdd.vue'
+import IconProfile from '@/components/icons/IconProfile.vue'
+
 export default {
   name: 'Footer',
   components: {
-    HomeIcon: () => import('@/assets/icons/home.svg?inline'),
-    AddIcon: () => import('@/assets/icons/add.svg?inline'),
-    ProfileIcon: () => import('@/assets/icons/profile.svg?inline'),
+    IconHome,
+    IconAdd,
+    IconProfile,
   },
   data: () => ({
     links: [
-      { name: 'Inicio', url: '/', component: 'HomeIcon' },
-      { name: 'Nuevo', url: '/add', component: 'AddIcon' },
-      { name: 'Perfil', url: '/profile', component: 'ProfileIcon' },
+      { name: 'Inicio', url: '/', component: 'IconHome' },
+      { name: 'Nuevo', url: '/add', component: 'IconAdd' },
+      { name: 'Perfil', url: '/profile', component: 'IconProfile' },
     ],
   }),
   methods: {},
@@ -34,9 +39,22 @@ export default {
 </script>
 
 <style scoped>
-.header {
-  @apply flex items-center justify-between p-4;
-
-  height: var(--header);
+.link-dark svg {
+  fill: theme('colors.gray-main.800');
+}
+.link-light svg {
+  fill: theme('colors.gray-main.700');
+}
+.nuxt-link-exact-active {
+  color: theme('colors.gray-main.900');
+}
+.nuxt-link-exact-active.link-dark {
+  color: theme('colors.white');
+}
+.nuxt-link-exact-active svg {
+  fill: theme('colors.gray-main.900');
+}
+.nuxt-link-exact-active.link-dark svg {
+  fill: theme('colors.white');
 }
 </style>

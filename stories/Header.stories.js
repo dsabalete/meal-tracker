@@ -1,5 +1,13 @@
+import Header from '../components/ui/Header.vue'
+
 export default {
   title: 'UI/Header',
+  component: Header,
 }
 
-export const DefaultHeader = () => '<Header />'
+const Template = () => ({
+  components: { Header },
+  template: '<Header />',
+})
+
+export const Default = Template.bind({})

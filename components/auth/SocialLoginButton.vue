@@ -10,16 +10,18 @@
 </template>
 
 <script>
+import IconGoogle from '@/components/icons/IconGoogle.vue'
+
 export default {
   name: 'SocialLoginButton',
   components: {
-    GoogleIcon: () => import('~/assets/icons/google.svg?inline'),
+    IconGoogle,
   },
   props: {
     type: {
       type: String,
       default: 'google',
-      validate: (value) => ['google'].includes(value),
+      validate: (value) => ['google', 'github'].includes(value),
     },
     text: {
       type: String,
@@ -28,7 +30,7 @@ export default {
   },
   data: () => ({
     socialOptions: {
-      google: 'GoogleIcon',
+      google: 'IconGoogle',
     },
   }),
   computed: {

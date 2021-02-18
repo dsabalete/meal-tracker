@@ -3,7 +3,7 @@
     <ColorSwitch />
 
     <div class="logo mx-auto">
-      <MealTrackerIcon class="w-96 h-96" />
+      <IconLogo width="200" height="200" />
     </div>
 
     <div class="mx-auto">
@@ -35,20 +35,7 @@
 </template>
 
 <script>
-import ColorSwitch from '@/components/ui/ColorSwitch'
-import MealTrackerIcon from '@/assets/icons/restaurant.svg?inline'
-
 export default {
   name: 'HomeView',
-  components: {
-    ColorSwitch,
-    MealTrackerIcon,
-  },
 }
 </script>
-
-<style lang="scss" scoped>
-.logo svg {
-  fill: currentColor;
-}
-</style>

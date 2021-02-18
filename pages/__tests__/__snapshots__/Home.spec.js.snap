@@ -9,8 +9,9 @@ exports[`Home View should match snapshot 1`] = `
   <div
     class="logo mx-auto"
   >
-    <mealtrackericon-stub
-      class="w-96 h-96"
+    <iconlogo
+      height="200"
+      width="200"
     />
   </div>
    
