@@ -38,7 +38,6 @@ export default {
   modules: [
     // https://firebase.nuxtjs.org/
     '@nuxtjs/firebase',
-    ,
     // https://github.com/nuxt-community/svg-module#readme
     '@nuxtjs/svg',
   ],
@@ -79,5 +78,10 @@ export default {
   storybook: {
     // Options
     stories: ['~/stories/**/*.stories.js'],
+    addons: [
+      '@storybook/addon-controls',
+      '@storybook/addon-backgrounds',
+      '@storybook/addon-docs',
+    ],
   },
 }
