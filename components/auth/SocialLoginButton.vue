@@ -11,11 +11,13 @@
 
 <script>
 import IconGoogle from '@/components/icons/IconGoogle.vue'
+import IconGithub from '@/components/icons/IconGithub.vue'
 
 export default {
   name: 'SocialLoginButton',
   components: {
     IconGoogle,
+    IconGithub,
   },
   props: {
     type: {
@@ -31,6 +33,7 @@ export default {
   data: () => ({
     socialOptions: {
       google: 'IconGoogle',
+      github: 'IconGithub',
     },
   }),
   computed: {
@@ -44,5 +47,8 @@ export default {
 <style lang="scss" scoped>
 .google {
   @apply bg-red-main-600 border-red-main-600 text-white;
+}
+.github {
+  @apply bg-gray-main-900  border-gray-main-1000 text-white;
 }
 </style>
