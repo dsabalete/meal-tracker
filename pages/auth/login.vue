@@ -27,7 +27,7 @@
 <script>
 import { mapMutations } from 'vuex'
 import { ROUTES } from '@/constants/routes'
-import ColorSwitch from '@/components/ui/ColorSwitch'
+import ColorSwitch from '@/components/ui/ColorSwitch.vue'
 import LoginForm from '@/components/auth/LoginForm.vue'
 import RegisterForm from '@/components/auth/RegisterForm.vue'
 

@@ -26,6 +26,7 @@
 <script>
 import Input from '@/components/ui/Input.vue'
 import Button from '@/components/ui/Button.vue'
+
 export default {
   name: 'RegisterForm',
   components: { Input, Button },
