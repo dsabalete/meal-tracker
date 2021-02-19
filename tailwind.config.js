@@ -6,16 +6,13 @@ module.exports = {
       }),
       backgroundColor: (theme) => ({
         light: theme('colors.gray-main.300'),
-        dark: theme('colors.blue-main.1100'),
+        dark: theme('colors.gray-main.1100'),
       }),
       colors: {
         'red-main': {
           600: '#F43D35',
         },
         'gray-main': {
-          100: '#EAEDF2',
-        },
-        'blue-main': {
           300: '#EAEDF2',
           400: '#DDE1E8',
           700: '#A6ADB1',
