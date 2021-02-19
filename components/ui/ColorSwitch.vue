@@ -1,28 +1,22 @@
 <template>
-  <div class="color-switch p-2">
+  <div class="p-2">
     <!-- {{ $colorMode.preference }} -->
-    <IconDark
-      v-if="$colorMode.preference !== 'dark'"
-      class="cursor-pointer fill-white text-blue-400"
-      @click="changeTheme('dark')"
-    />
-    <IconLight
-      v-else
-      class="cursor-pointer text-blue-100"
-      @click="changeTheme('light')"
-    />
+    <span v-if="$colorMode.preference !== 'dark'" @click="changeTheme('dark')">
+      <IconDark class="cursor-pointer w-6 h-6" />
+    </span>
+
+    <span v-else @click="changeTheme('light')">
+      <IconLight class="cursor-pointer fill-white text-white w-6 h-6" />
+    </span>
   </div>
 </template>
 
 <script>
-import IconLight from '@/components/icons/IconLight'
-import IconDark from '@/components/icons/IconDark'
-
 export default {
   name: 'ColorSwitch',
   components: {
-    IconLight,
-    IconDark,
+    IconLight: () => import('@/components/icons/IconLight'),
+    IconDark: () => import('@/components/icons/IconDark'),
   },
   methods: {
     changeTheme(theme) {
@@ -31,10 +25,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.color-switch {
-  width: 3rem;
-  height: 3rem;
-}
-</style>
