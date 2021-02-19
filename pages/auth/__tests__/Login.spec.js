@@ -33,10 +33,4 @@ describe('Login View', () => {
     const form = wrapper.findComponent({ name: 'LoginForm' })
     expect(form.exists()).toBeTruthy()
   })
-
-  xtest('should have a RegisterForm when in register mode', () => {
-    const wrapper = build({ isRegisterMode: true })
-    const form = wrapper.findComponent({ name: 'RegisterForm' })
-    expect(form.exists()).toBeTruthy()
-  })
 })
