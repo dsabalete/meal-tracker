@@ -39,7 +39,7 @@ export default {
 </script>
 
 <style scoped>
-/* .link-dark svg {
+.link-dark svg {
   fill: theme('colors.gray-main.800');
 }
 .link-light svg {
@@ -56,5 +56,5 @@ export default {
 }
 .nuxt-link-exact-active.link-dark svg {
   fill: theme('colors.white');
-} */
+}
 </style>
