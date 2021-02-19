@@ -8,6 +8,7 @@
       <SocialLoginButton
         text="Iniciar sesión con github"
         type="github"
+        class="mt-4 border-4 border-white"
         @click="login('github')"
       />
     </div>
