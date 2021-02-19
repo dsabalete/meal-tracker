@@ -49,6 +49,6 @@ export default {
   @apply bg-red-main-600 border-red-main-600 text-white;
 }
 .github {
-  @apply bg-gray-main-900  border-gray-main-1000 text-white;
+  @apply bg-gray-main-1000  border-white text-white;
 }
 </style>
