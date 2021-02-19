@@ -2,31 +2,28 @@
 
 exports[`Login View should match snapshot 1`] = `
 <div
-  class="h-full overflow-hidden"
+  class="h-full overflow-x-hidden flex flex-col"
 >
-  <div
-    class="flex justify-end p-4"
-  >
-    <colorswitch-stub />
-  </div>
-   
-  <h1
-    class="text-center text-3xl font-bold"
-  >
-    Meal Tracker
-  </h1>
-   
-  <div
-    class="login-body mt-12 h-full flex flex-col justify-center items-center bg-light dark:bg-blue-main-800"
-  >
-    <socialloginbutton-stub
-      text="Iniciar sesión con google"
-      type="google"
-    />
+  <section>
+    <div
+      class="flex justify-end p-4"
+    >
+      <!---->
+       
+      <colorswitch-stub />
+    </div>
      
-    <p>
-      iniciar sesion con google
-    </p>
+    <h1
+      class="text-center text-3xl font-bold"
+    >
+      Meal Tracker
+    </h1>
+  </section>
+   
+  <div
+    class="login-body mt-12 h-full bg-light dark:bg-gray-main-1000"
+  >
+    <loginform-stub />
   </div>
 </div>
 `;
