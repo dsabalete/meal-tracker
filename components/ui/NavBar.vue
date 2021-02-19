@@ -22,14 +22,7 @@
 </template>
 
 <script>
-import IconLogo from '@/components/icons/IconLogo'
-import IconMenu from '@/components/icons/IconMenu'
-
 export default {
   name: 'NavBar',
-  components: {
-    IconLogo,
-    IconMenu,
-  },
 }
 </script>

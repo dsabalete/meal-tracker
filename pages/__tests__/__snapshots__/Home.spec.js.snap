@@ -4,14 +4,13 @@ exports[`Home View should match snapshot 1`] = `
 <div
   class="flex flex-col flex-grow space-y-12 text-blue-400 max-h-full"
 >
-  <colorswitch-stub />
+  <uicolorswitch />
    
   <div
     class="logo mx-auto"
   >
-    <iconlogo-stub
+    <iconlogo
       height="200"
-      iconcolor="currentColor"
       width="200"
     />
   </div>

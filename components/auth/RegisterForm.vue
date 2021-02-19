@@ -1,16 +1,16 @@
 <template>
   <section class="flex flex-col items-center justify-center pt-4">
-    <h1 class="text-center text-2xl">Regístrate</h1>
+    <h1 class="text-center text-2xl">Register</h1>
     <form class="mt-12 register-form" @submit.prevent>
-      <Input v-model="form.name" text="Nombre" name="name" />
-      <Input
+      <UiInput v-model="form.name" text="Nombre" name="name" />
+      <UiInput
         v-model="form.email"
         text="Email"
         name="name"
         type="email"
         class="mt-4"
       />
-      <Input
+      <UiInput
         v-model="form.pass"
         text="Contraseña"
         name="name"
@@ -18,18 +18,14 @@
         class="mt-4"
       />
 
-      <Button class="mt-6" @click="registerUser()">Regístrate</Button>
+      <UiButton class="mt-6" @click="registerUser()">Register</UiButton>
     </form>
   </section>
 </template>
 
 <script>
-import Input from '@/components/ui/Input.vue'
-import Button from '@/components/ui/Button.vue'
-
 export default {
   name: 'RegisterForm',
-  components: { Input, Button },
   data: () => ({
     form: {
       name: '',

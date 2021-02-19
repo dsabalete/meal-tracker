@@ -16,17 +16,8 @@
 </template>
 
 <script>
-import IconHome from '@/components/icons/IconHome.vue'
-import IconAdd from '@/components/icons/IconAdd.vue'
-import IconProfile from '@/components/icons/IconProfile.vue'
-
 export default {
   name: 'Footer',
-  components: {
-    IconHome,
-    IconAdd,
-    IconProfile,
-  },
   data: () => ({
     links: [
       { name: 'Inicio', url: '/', component: 'IconHome' },

@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col flex-grow space-y-12 text-blue-400 max-h-full">
-    <ColorSwitch />
+    <UiColorSwitch />
 
     <div class="logo mx-auto">
       <IconLogo width="200" height="200" />
@@ -35,14 +35,7 @@
 </template>
 
 <script>
-import IconLogo from '@/components/icons/IconLogo'
-import ColorSwitch from '@/components/ui/ColorSwitch'
-
 export default {
   name: 'HomeView',
-  components: {
-    IconLogo,
-    ColorSwitch,
-  },
 }
 </script>

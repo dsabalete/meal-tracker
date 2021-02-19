@@ -10,7 +10,7 @@ exports[`Login View should match snapshot 1`] = `
     >
       <!---->
        
-      <colorswitch-stub />
+      <uicolorswitch />
     </div>
      
     <h1
@@ -23,7 +23,7 @@ exports[`Login View should match snapshot 1`] = `
   <div
     class="login-body mt-12 h-full bg-light dark:bg-gray-main-1000"
   >
-    <loginform-stub />
+    <authloginform />
   </div>
 </div>
 `;

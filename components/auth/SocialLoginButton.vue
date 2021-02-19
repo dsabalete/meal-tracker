@@ -10,15 +10,8 @@
 </template>
 
 <script>
-import IconGoogle from '@/components/icons/IconGoogle.vue'
-import IconGithub from '@/components/icons/IconGithub.vue'
-
 export default {
   name: 'SocialLoginButton',
-  components: {
-    IconGoogle,
-    IconGithub,
-  },
   props: {
     type: {
       type: String,

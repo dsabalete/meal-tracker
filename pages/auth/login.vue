@@ -5,21 +5,25 @@
         class="flex justify-end p-4"
         :class="{ 'justify-between': isRegisterMode }"
       >
-        <p v-if="isRegisterMode" class="cursor-pointer" @click="hideRegister()">
-          volver
+        <p
+          v-if="isRegisterMode"
+          class="cursor-pointer text-3xl"
+          @click="hideRegister()"
+        >
+          ⬅︎
         </p>
-        <ColorSwitch />
+        <UiColorSwitch />
       </div>
       <h1 class="text-center text-3xl font-bold">Meal Tracker</h1>
     </section>
 
     <div class="login-body mt-12 h-full bg-light dark:bg-gray-main-1000">
-      <LoginForm
+      <AuthLoginForm
         v-if="!isRegisterMode"
         @login="loginWith"
         @show-register="showRegister()"
       />
-      <RegisterForm v-else @register="registerUser" />
+      <AuthRegisterForm v-else @register="registerUser" />
     </div>
   </div>
 </template>
@@ -27,17 +31,9 @@
 <script>
 import { mapMutations } from 'vuex'
 import { ROUTES } from '@/constants/routes'
-import ColorSwitch from '@/components/ui/ColorSwitch.vue'
-import LoginForm from '@/components/auth/LoginForm.vue'
-import RegisterForm from '@/components/auth/RegisterForm.vue'
 
 export default {
   name: 'Login',
-  components: {
-    ColorSwitch,
-    LoginForm,
-    RegisterForm,
-  },
   layout: 'auth',
   data: () => ({
     isRegisterMode: false,

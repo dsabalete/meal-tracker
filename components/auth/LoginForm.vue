@@ -1,11 +1,11 @@
 <template>
   <div class="flex flex-col justify-around h-full">
     <div class="flex flex-col items-center mb-8">
-      <SocialLoginButton
+      <AuthSocialLoginButton
         text="Iniciar sesión con google"
         @click="login('google')"
       />
-      <SocialLoginButton
+      <AuthSocialLoginButton
         text="Iniciar sesión con github"
         type="github"
         class="mt-4 border-4 border-white"
@@ -20,10 +20,8 @@
 </template>
 
 <script>
-import SocialLoginButton from '@/components/auth/SocialLoginButton.vue'
 export default {
   name: 'LoginForm',
-  components: { SocialLoginButton },
   methods: {
     login(type) {
       this.$emit('login', type)

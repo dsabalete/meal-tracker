@@ -1,4 +1,4 @@
-import IconLogo from '~/components/icons/IconLogo.vue'
+import IconLogo from '~/components/icon/Logo.vue'
 
 const Template = (args, { argTypes }) => ({
   components: { IconLogo },
@@ -7,7 +7,7 @@ const Template = (args, { argTypes }) => ({
 })
 
 export default {
-  title: 'Icons/IconLogo',
+  title: 'Icon/Logo',
   component: IconLogo,
   args: {
     iconColor: 'currentColor',
