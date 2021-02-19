@@ -9,8 +9,9 @@ exports[`Home View should match snapshot 1`] = `
   <div
     class="logo mx-auto"
   >
-    <iconlogo
+    <iconlogo-stub
       height="200"
+      iconcolor="currentColor"
       width="200"
     />
   </div>

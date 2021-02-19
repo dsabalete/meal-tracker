@@ -35,7 +35,14 @@
 </template>
 
 <script>
+import IconLogo from '@/components/icons/IconLogo'
+import ColorSwitch from '@/components/ui/ColorSwitch'
+
 export default {
   name: 'HomeView',
+  components: {
+    IconLogo,
+    ColorSwitch,
+  },
 }
 </script>

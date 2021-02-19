@@ -14,7 +14,14 @@
 </template>
 
 <script>
+import IconLogo from '@/components/icons/IconLogo'
+import IconProfile from '@/components/icons/IconProfile'
+
 export default {
   name: 'Header',
+  components: {
+    IconLogo,
+    IconProfile,
+  },
 }
 </script>

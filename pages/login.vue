@@ -41,10 +41,14 @@
 
 <script>
 import { mapActions, mapGetters } from 'vuex'
+import ColorSwitch from '@/components/ui/ColorSwitch'
 
 export default {
   name: 'Login',
   layout: 'login',
+  components: {
+    ColorSwitch,
+  },
   data() {
     return {
       error: null,

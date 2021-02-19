@@ -9,3 +9,16 @@
     <Footer class="md:hidden" />
   </div>
 </template>
+
+<script>
+import Header from '@/components/ui/Header'
+import Footer from '@/components/ui/Footer'
+
+export default {
+  name: 'DefaultLayout',
+  components: {
+    Header,
+    Footer,
+  },
+}
+</script>

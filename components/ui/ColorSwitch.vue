@@ -15,8 +15,15 @@
 </template>
 
 <script>
+import IconLight from '@/components/icons/IconLight'
+import IconDark from '@/components/icons/IconDark'
+
 export default {
   name: 'ColorSwitch',
+  components: {
+    IconLight,
+    IconDark,
+  },
   methods: {
     changeTheme(theme) {
       this.$colorMode.preference = theme
