@@ -6,6 +6,6 @@
 
 <script>
 export default {
-  name: 'BaseLink',
+  name: 'UiBaseLink',
 }
 </script>

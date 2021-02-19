@@ -23,6 +23,6 @@
 
 <script>
 export default {
-  name: 'NavBar',
+  name: 'UiNavBar',
 }
 </script>

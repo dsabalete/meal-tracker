@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: 'Footer',
+  name: 'UiFooter',
   data: () => ({
     links: [
       { name: 'Inicio', url: '/', component: 'IconHome' },

@@ -1,8 +1,8 @@
 <template>
   <section class="flex flex-col items-center justify-center pt-4">
-    <h1 class="text-center text-2xl">Register</h1>
+    <h1 class="text-center text-2xl">Sign Up</h1>
     <form class="mt-12 register-form" @submit.prevent>
-      <UiInput v-model="form.name" text="Nombre" name="name" />
+      <UiInput v-model="form.name" text="Name" name="name" />
       <UiInput
         v-model="form.email"
         text="Email"
@@ -12,20 +12,20 @@
       />
       <UiInput
         v-model="form.pass"
-        text="Contraseña"
+        text="Password"
         name="name"
         type="password"
         class="mt-4"
       />
 
-      <UiButton class="mt-6" @click="registerUser()">Register</UiButton>
+      <UiButton class="mt-6" @click="registerUser()">Send</UiButton>
     </form>
   </section>
 </template>
 
 <script>
 export default {
-  name: 'RegisterForm',
+  name: 'AuthRegisterForm',
   data: () => ({
     form: {
       name: '',

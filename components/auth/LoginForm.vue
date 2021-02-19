@@ -2,26 +2,26 @@
   <div class="flex flex-col justify-around h-full">
     <div class="flex flex-col items-center mb-8">
       <AuthSocialLoginButton
-        text="Iniciar sesión con google"
+        text="Sign in with google"
         @click="login('google')"
       />
       <AuthSocialLoginButton
-        text="Iniciar sesión con github"
+        text="Sign in with github"
         type="github"
         class="mt-4 border-4 border-white"
         @click="login('github')"
       />
     </div>
     <div class="text-center">
-      <p class="font-bold cursor-pointer" @click="showRegister()">Regístrate</p>
-      <p>¿Ya tienes una cuenta? <b>Iniciar sesión</b></p>
+      <p class="font-bold cursor-pointer" @click="showRegister()">Sign up</p>
+      <p>Do you have an account? <b>Sign in</b></p>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'LoginForm',
+  name: 'AuthLoginForm',
   methods: {
     login(type) {
       this.$emit('login', type)

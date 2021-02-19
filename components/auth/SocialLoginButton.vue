@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'SocialLoginButton',
+  name: 'AuthSocialLoginButton',
   props: {
     type: {
       type: String,

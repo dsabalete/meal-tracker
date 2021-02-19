@@ -1,6 +1,5 @@
 <template>
   <div class="p-2">
-    <!-- {{ $colorMode.preference }} -->
     <span v-if="$colorMode.preference !== 'dark'" @click="changeTheme('dark')">
       <LazyIconDark class="cursor-pointer w-6 h-6" />
     </span>
@@ -13,7 +12,7 @@
 
 <script>
 export default {
-  name: 'ColorSwitch',
+  name: 'UiColorSwitch',
   methods: {
     changeTheme(theme) {
       this.$colorMode.preference = theme
