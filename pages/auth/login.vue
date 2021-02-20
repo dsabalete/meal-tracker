@@ -61,6 +61,7 @@ export default {
         this.$router.push(ROUTES.HOME)
       } catch (error) {
         // TODO: show toast
+        // eslint-disable-next-line
         console.error('login error', error)
       }
     },
@@ -72,18 +73,20 @@ export default {
     },
     async registerUser(data) {
       try {
-        await this.$fireAuth.createUserWithEmailAndPassword(
+        await this.$fire.auth.createUserWithEmailAndPassword(
           data.email,
           data.pass
         )
         await this.updateNameUser(data.name)
-        console.log(this.$fireAuth.currentUser)
+        // eslint-disable-next-line
+        console.log(this.$fire.auth.currentUser)
       } catch (error) {
+        // eslint-disable-next-line
         console.error(error)
       }
     },
     updateNameUser(name) {
-      const user = this.$fireAuth.currentUser
+      const user = this.$fire.auth.currentUser
       user.updateProfile({
         displayName: name,
       })
